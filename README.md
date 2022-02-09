@@ -1,53 +1,7 @@
+![Иллюстрация к проекту](https://github.com/jon/coolproject/raw/master/image/image.png)
 
-1.	Ответ:
-    https://hub.docker.com/repository/docker/ilynx/net_nginx 
-    
-	
-2.	Ответ:
-     
-    - Высоконагруженное монолитное java веб-приложение
-	Скорее всего, физический сервер, так как лучше обеспечить прямой доступ к ресурсам.
-	
-    - Nodejs веб-приложение
-	Можно использовать docker (ну или lxc). Достаточно легко будет управлять.  
-    
-    - Мобильное приложение c версиями для Android и iOS
-	Я бы выбрал виртуалку, нужно много специфического ПО (кроме Android SDK, необходимо чтобы была последняя версия Kotlin, Gradle, platform-tools, build-tools и т.д)
-    
-    - Шина данных на базе Apache Kafka
-	Зависит от передаваемых данных и текущей инфраструктуры. Можно, думаю, использовать и виртуалку и контейнер. Еще зависит от хостовой машины. 
-    
-    - Elasticsearch кластер для реализации логирования продуктивного веб-приложения - три ноды elasticsearch, два logstash и две ноды kibana
-	Это все лучше разделить: Elasticsearch положить на виртуалку,  Kibana и Logstash можно и в контейнер и виртуалку. Опять же зависит от инфраструктуры.  
-    
-    - Мониторинг-стек на базе Prometheus и Grafana
-	И виртуалка и контейнер.
-    
-    - MongoDB, как основное хранилище данных для java-приложения
-	Наверное зависит от нагрузки. Или физический сервер или виртуалка.
-    
-    - Gitlab сервер для реализации CI/CD процессов и приватный (закрытый) Docker Registry
-	Можно использовать виртуальную машину, так проще делать бекапы и не нужно маштабирование.
-	
-    От себя добавлю, что использование физических серверов нужно только для очень специфических высоконагруженных задач (или просто специфических) (типа SQL). На старой работе на веб-сервере все сделал в lxc: в одном был только mysql, а на втором: memcached, sphinx, php. на хостовой машине был только nginx. В офисе кроме DC, SQL и 1С , все в виртуалках. Конечно, есть риск того, что с хостовой машиной может что то случиться, но наличие образов и резервного сервера практически нивелируют риски. 
-    
-3.	Ответ:
-    - создание контейнеров
-    docker run -itd --name centos_v1 -v /home/ilynx/docker/data:/data centos
-    docker run -itd --name debian_v1 -v /home/ilynx/docker/data:/data debian
-    
-    - Создание текстового файла в первом контейнере.
-    
-      docker exec -it centos_v1 bash
-      echo "Ave, Caesar, morituri te salutant" > /data/ centos
-     
-    - Создание файла на хосте
-    echo "Greeting to you from host" > /home/ilynx/docker/data/host
-    
-    - листинг и содержание файлов
-    ls -l /data/
-    -rw-r--r-- 1 root root 34 Fev  4 06:53 centos
-    -rw-r--r-- 1 root root 26 Fev  4 06:58 host
-    
-    cat /data/centos
-    cat /data/host
+![Image alt](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
+
+![Exercise1](https://github.com/flibook/devops-netology/origin/exer1.png)
+![Exercise2](https://github.com/flibook/devops-netology/origin/exer2.jpg)
+![Exercise3](https://github.com/flibook/devops-netology/origin/exer3.png)
