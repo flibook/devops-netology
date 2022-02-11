@@ -1,3 +1,37 @@
-![Exercise1](https://github.com/flibook/devops-netology/blob/main/exer1.png)
-![Exercise2](https://github.com/flibook/devops-netology/blob/main/exer2.jpg)
-![Exercise3](https://github.com/flibook/devops-netology/blob/main/exer3.png)
+Домашнее задание к занятию "5.5. Оркестрация кластером Docker контейнеров на примере Docker Swarm"
+
+Задача 1
+
+- В чём отличие режимов работы сервисов в Docker Swarm кластере: replication и global?
+
+Relpication -  Сервисы в реплицированном режиме обычно распределяются по узлам, но также могут быть размещены на одном узле.
+Global - Сервисы запускаются на всех нодах. Обычно используется на экспортерах. Где неважно это воркер или менеджер.
+
+- Какой алгоритм выбора лидера используется в Docker Swarm кластере?
+
+Алгоритм поддержания распределенного консенсуса — Raft.
+
+- Что такое Overlay Network?
+
+Overlay Network — логическая или виртуальная сеть верхнего уровня. Узлы оверлейной сети могут быть связаны либо физически, либо логически. Клиенты разных сетей могут находится как-будто в одной сети.
+
+Задача 2
+
+![Exercise1](https://github.com/flibook/devops-netology/blob/main/screen1.png)
+
+Задача 3
+
+![Exercise2](https://github.com/flibook/devops-netology/blob/main/screen2.jpg)
+
+
+![Exercise3](https://github.com/flibook/devops-netology/blob/main/screen3.png)
+
+
+Задача 4
+
+![Exercise3](https://github.com/flibook/devops-netology/blob/main/screen4.png)
+
+Эта команда блокирует swarm manager и создает ключ для его разблокировки после перезагрузки. Видимо, используется для защиты конфигурации и данных от атак.
+При перезапуске докера, TLS ключи, которые используются для шифрования передачи данных между нодами и ключ для шифрования и расшифровки Raft логов загружаются в память каждого менеджера. 
+
+Попробовал использовать docker swarm update --autolock=false и потом опять =true. Выдается новый ключ.
