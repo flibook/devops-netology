@@ -21,7 +21,7 @@ Overlay Network — логическая или виртуальная сеть 
 
 Задача 3
 
-![](https://github.com/flibook/devops-netology/blob/main/screen2.jpg)
+![](https://github.com/flibook/devops-netology/blob/main/screen2.png)
 ![](https://github.com/flibook/devops-netology/blob/main/screen3.png)
 
 
