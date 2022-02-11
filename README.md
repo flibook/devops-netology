@@ -17,19 +17,17 @@ Overlay Network — логическая или виртуальная сеть 
 
 Задача 2
 
-![Exercise1](https://github.com/flibook/devops-netology/blob/main/screen1.png)
+![](https://github.com/flibook/devops-netology/blob/main/screen1.png)
 
 Задача 3
 
-![Exercise2](https://github.com/flibook/devops-netology/blob/main/screen2.jpg)
-
-
-![Exercise3](https://github.com/flibook/devops-netology/blob/main/screen3.png)
+![](https://github.com/flibook/devops-netology/blob/main/screen2.jpg)
+![](https://github.com/flibook/devops-netology/blob/main/screen3.png)
 
 
 Задача 4
 
-![Exercise3](https://github.com/flibook/devops-netology/blob/main/screen4.png)
+![](https://github.com/flibook/devops-netology/blob/main/screen4.png)
 
 Эта команда блокирует swarm manager и создает ключ для его разблокировки после перезагрузки. Видимо, используется для защиты конфигурации и данных от атак.
 При перезапуске докера, TLS ключи, которые используются для шифрования передачи данных между нодами и ключ для шифрования и расшифровки Raft логов загружаются в память каждого менеджера. 
