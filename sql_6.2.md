@@ -139,13 +139,12 @@ width — средний размер одной строки в байтах.
 ## Задача 6
 
 
-```
 pg_dump pgdb -U postgres -h localhost -p 5431 > pgdb_backup.dump
 
 ![](https://github.com/flibook/devops-netology/blob/main/img1.png)
 
 psql -U posgres -W pgdb -p 5431 < pgdb_backup.dump 
 
-![](https://github.com/flibook/devops-netology/blob/main/img2.png
-```
+![](https://github.com/flibook/devops-netology/blob/main/img2.png)
+
 ---
