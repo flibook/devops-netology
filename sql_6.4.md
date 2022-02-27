@@ -1,5 +1,7 @@
-Задача 1
+# Домашнее задание к занятию "6.4. PostgreSQL"
 
+## Задача 1
+```
 -вывода списка БД
 \l
 
@@ -14,9 +16,11 @@
 
 -выхода из psql
 \q
+```
 
-Задача 2
+## Задача 2
 
+```
 create database test_database;
 
 psql -U postgres -d test_database -p 5432 -W < test_dump.sql
@@ -45,9 +49,9 @@ test_database=# select avg_width from pg_stats where tablename='orders';
         16
          4
 
+## Задача 3
 
-Задача 3
-
+```
 2 варианта партицирования: декларативное партицирование и партицирование через наследование(является более гибким решением).
 
 create table orderss (id serial, title varchar(80), price int) partition by range (price);
@@ -69,8 +73,11 @@ Partitions: orders_1 FOR VALUES FROM (0) TO (499),
 "Ручного" разбиения таблицы можно было бы избежать на этапе проектирования, изначально заложив партиции. Если, в них, конечно, была необходимость. Или плохо поставлена была задача или неквалифицированность специалистов.  
 
 
-Задача 4
+```
 
+## Задача 4
+
+```
 root@NightWish:~/64# pg_dump -U postgres -W -p 5432 test_database > backup_db.sql
 Password: 
 root@NightWish:~/64# 
@@ -79,3 +86,5 @@ alter table public.orderss add constraint unique_orderss_title unique (title,id,
 alter table public.orders_1 add constraint unique_orders_2_title unique (title,id,price);
 alter table public.orders_2 add constraint unique_orders_2_title unique (title,id,price);
 
+```
+---
