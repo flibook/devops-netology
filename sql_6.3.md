@@ -1,5 +1,7 @@
-Задача 1
+# Домашнее задание к занятию "6.3. mySQL"
 
+## Задача 1
+```
 mysql> \h
 
 For information about MySQL products and services, visit:
@@ -96,22 +98,30 @@ mysql> select * from orders where price > 300;
 |  2 | My little pony |   500 |
 +----+----------------+-------+
 1 row in set (0,00 sec)
+```
 
+## Задача 2
 
-Задача 2
-
+```
 mysql> create user 'test'@'localhost' identified with mysql_native_password by 'test-pass' password expire interval 180 day failed_login_attempts 3 attribute '{"fname": "Pretty", "lname": "James"}';
+
 mysql> alter user 'test'@'localhost' with max_queries_per_hour 100;
+
 mysql> grant select on mysql_db.* to 'test'@'localhost';
+
 mysql> select * from information_schema.user_attributes where user='test';
+
 +------+-----------+---------------------------------------+
 | USER | HOST      | ATTRIBUTE                             |
 +------+-----------+---------------------------------------+
 | test | localhost | {"fname": "Pretty", "lname": "James"} |
 +------+-----------+---------------------------------------+
 
-Задача 3
+```
 
+## Задача 3
+
+```
 mysql> show profiles;
 +----------+------------+-------------------+
 | Query_ID | Duration   | Query             |
@@ -188,11 +198,12 @@ mysql> select * from orders;
 +----+-----------------------+-------+
 5 rows in set (0,01 sec)
 
-select на InnoDB отработал быстрее, чем на MyISAM   
+select на InnoDB отработал быстрее, чем на MyISAM 
+```
 
+## Задача 4
 
-Задача 4
-
+```
 #
 # The MySQL database server configuration file.
 #
@@ -233,3 +244,5 @@ query_cache_size               = 0
 
 !includedir /etc/mysql/conf.d/
 
+```
+---
