@@ -62,7 +62,9 @@ AWS регион, который используется в данный мом
 
 Вывод terraform show
 
+```
 root@ip-10-0-205-110:/opt/tf# terraform show
+
 # aws_instance.prometheus:
 resource "aws_instance" "prometheus" {
     ami                                  = "ami-04505e74c0741db8d"
@@ -140,7 +142,7 @@ resource "aws_instance" "prometheus" {
         volume_type           = "gp3"
     }
 }
-
+```
 
 
 Ответ на вопрос: при помощи какого инструмента (из разобранных на прошлом занятии) можно создать свой образ ami?
