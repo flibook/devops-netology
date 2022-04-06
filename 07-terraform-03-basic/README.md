@@ -173,8 +173,6 @@ Terraform will perform the following actions:
       + subnet_id                            = "subnet-e9422eb4"
       + tags_all                             = (known after apply)
       + tenancy                              = (known after apply)
-      + user_data                            = "c799c41d57e11a5d400d1f16c2cb11f407b3b21f"
-      + user_data_base64                     = (known after apply)
       + user_data_replace_on_change          = false
       + vpc_security_group_ids               = (known after apply)
 
@@ -270,8 +268,6 @@ Terraform will perform the following actions:
       + subnet_id                            = "subnet-e9422eb4"
       + tags_all                             = (known after apply)
       + tenancy                              = (known after apply)
-      + user_data                            = "c799c41d57e11a5d400d1f16c2cb11f407b3b21f"
-      + user_data_base64                     = (known after apply)
       + user_data_replace_on_change          = false
       + vpc_security_group_ids               = (known after apply)
 
