@@ -130,9 +130,7 @@
 Вывод команды terraform workspace list.
 Вывод команды terraform plan для воркспейса prod.
 
-Вывод сильно большой. поэтому вырезал только создаваемые ресурсы
-
-
+```
 root@ip-10-0-205-110:/opt/tf# terraform plan
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
