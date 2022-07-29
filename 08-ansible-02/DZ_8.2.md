@@ -313,7 +313,7 @@ ec2-44-208-98-137.compute-1.amazonaws.com : ok=6    changed=0    unreachable=0  
 
 <details><summary></summary>
     
-[Ссылка на README.md](https://github.com/PanMonsters/Ansible_8.2/blob/5efc200f95295416946214d6e9ed9af96cd3d76c/README.md)
+[Ссылка на README.md](https://github.com/flibook/devops-netology/tree/main/08-ansible-02/playbook#readme)
 
 </details>
 
@@ -321,7 +321,7 @@ ec2-44-208-98-137.compute-1.amazonaws.com : ok=6    changed=0    unreachable=0  
      
 <details><summary></summary>
 
-[Ссылка на репозиторий](https://github.com/PanMonsters/Ansible_8.2/tree/5efc200f95295416946214d6e9ed9af96cd3d76c)
+[Ссылка на репозиторий](https://github.com/flibook/devops-netology/tree/main/08-ansible-02/playbook)
 
 </details>
 
