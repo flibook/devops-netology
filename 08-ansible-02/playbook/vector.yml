@@ -1,0 +1,44 @@
+---
+- name: Install Vector
+  hosts: ec2-44-208-98-137.compute-1.amazonaws.com
+  vars:
+    vector_version: 0.23.0
+  tasks:
+    #- name: Get vector distrib
+    #  ansible.builtin.shell:
+    #    curl --proto '=https' --tlsv1.2 -sSf https://sh.vector.dev | bash /dev/stdin -y
+    - name: Get vector distrib
+      ansible.builtin.get_url:
+        url: "https://packages.timber.io/vector/0.23.0/vector-{{ vector_version }}-x86_64-unknown-linux-gnu.tar.gz"
+        dest: "./{{ vector_version }}.tar.gz"
+        mode: 0755
+    - name: Create directory /opt/vector/
+      become: true
+      ansible.builtin.file:
+        path: /opt/vector/
+        state: directory
+        owner: root
+        group: root
+        mode: 0755
+    - name: Copy to folder
+      become: true
+      ansible.builtin.copy:
+        src: "./{{ vector_version }}.tar.gz"
+        dest: /opt/vector/{{ vector_version }}.tar.gz
+        mode: 0755
+        remote_src: yes
+    - name: Unpack
+      become: true
+      ansible.builtin.unarchive:
+        src: /opt/vector/{{ vector_version }}.tar.gz
+        dest: /opt/vector/
+        extra_opts: [--strip-components=2]
+        mode: 0755
+        remote_src: yes
+      ignore_errors: "{{ ansible_check_mode }}"
+    - name: Set environment vector
+      become: true
+      ansible.builtin.template:
+        src: templates/vector.sh.j2
+        dest: /etc/profile.d/vector.sh
+        mode: 0755

@@ -1,0 +1,11 @@
+[clickhouse]
+ec2-44-209-218-22.compute-1.amazonaws.com
+
+[vector]
+ec2-44-208-98-137.compute-1.amazonaws.com
+
+[clickhouse:vars]
+ansible_ssh_private_key_file=/root/keys/dev_ans.pem
+
+[vector:vars]
+ansible_ssh_private_key_file=/root/keys/dev_ans.pem
