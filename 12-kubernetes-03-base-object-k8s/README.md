@@ -82,14 +82,7 @@ Request Body:
    pod-with-app             1/1     Running   0             13h
    hello-world              1/1     Running   0             13h
    netology-web             1/1     Running   0             12h
-3. Манифесты
-   [Конфиг Pod1]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/config.yaml
-
-   [Конфиг Pod2]: (https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/config-1.yaml)
-   
-   [Конфиг Service]: (https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/service.yaml)
-   
-4. Вывод команды 
+3. Вывод команды 
    microk8s kubectl describe svc netology-svc 
 
    Name:              netology-svc
@@ -108,6 +101,13 @@ Request Body:
    Session Affinity:  None
    Events:            <none>
 ```
+3. Манифесты
+   [Конфиг Pod1]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/config.yaml <br />
+
+   [Конфиг Pod2]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/config-1.yaml
+   
+   [Конфиг Service]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/service.yaml
+   
 ### Правила приема работы
 
 1. Домашняя работа оформляется в своем  Git репозитории в файле README.md. Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
