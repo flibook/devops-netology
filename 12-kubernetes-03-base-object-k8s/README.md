@@ -83,7 +83,7 @@ Request Body:
    netology-web             1/1     Running   0             12h
 3. Манифесты  
    [Конфиг Pod1] (./config.yaml)
-   [Конфиг Pod2] (./config-1.yaml)
+   [Конфиг Pod2] ([./config-1.yaml](https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/config-1.yaml))
    [Конфиг Service] (./service.yaml)
 4. Вывод команды 
    microk8s kubectl describe svc netology-svc 
