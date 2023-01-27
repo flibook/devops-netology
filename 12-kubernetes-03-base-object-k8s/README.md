@@ -101,7 +101,7 @@ Request Body:
    Session Affinity:  None
    Events:            <none>
 ```
-3. Манифесты
+4. Манифесты <br />
    [Конфиг Pod1]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/config.yaml <br />
 
    [Конфиг Pod2]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/config-1.yaml <br />
