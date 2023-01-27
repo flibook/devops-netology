@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: myapp
+  name: hello-world
+  namespace: default
+spec:
+  containers:
+  - image: gcr.io/kubernetes-e2e-test-images/echoserver:2.2
+    imagePullPolicy: IfNotPresent
+    name: echo
+    env:
+    - name: HTTP_PORT
+      value: "8080"
