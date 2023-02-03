@@ -28,13 +28,13 @@
 2. После запуска увеличить кол-во реплик работающего приложения до 2
 3. Продемонстрировать кол-во подов до и после масштабирования
  
-   [Конфиг Pod1]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/deployment.yaml <br />
+   [Конфиг Pod1]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-run-app/deployment.yaml <br />
 
-   [Конфиг Pod2]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/multitool.yaml <br />
+   [Конфиг Pod2]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-run-app/multitool.yaml <br />
    
-   [До]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/before.png <br />
+   [До]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-run-app/before.png <br />
 
-   [После]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/after.png <br />
+   [После]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-run-app/after.png <br />
    
 4. Создать Service, который обеспечит доступ до реплик приложений из п.1
 5. Создать отдельный Pod с приложением multitool и убедиться с помощью `curl` что из пода есть доступ до приложений из п.1
@@ -45,13 +45,13 @@
 
 1. Создать Deployment приложения nginx и обеспечить старт контейнера только после того, как будет запущен сервис этого приложения
 2. Убедиться, что nginx не стартует. В качестве init-контейнера взять busybox
-   [Конфиг Pod1]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/init.yaml
+   [Конфиг Pod1]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-run-app/init.yml.yaml
 3. Создать и запустить Service. Убедиться, что nginx запустился
 4. Продемонстрировать состояние пода до и после запуска сервиса
    
-   [До]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/init-1.png <br />
+   [До]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-run-app/init-1.png <br />
 
-   [После]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-object-k8s/init-2.png <br />
+   [После]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-run-app/init-2.png <br />
 
 ------
 
