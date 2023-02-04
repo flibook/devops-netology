@@ -32,14 +32,14 @@
 
    [Конфиг Pod2]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-run-app/multitool.yaml <br />
    
-   [До]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-run-app/before.png <br />
+   [До](./before.png) <br />
 
-   [После]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-run-app/after.png <br />
+   [После](./after.png) <br />
    
 4. Создать Service, который обеспечит доступ до реплик приложений из п.1
 5. Создать отдельный Pod с приложением multitool и убедиться с помощью `curl` что из пода есть доступ до приложений из п.1
 
-
+------
 
 ### Задание 2. Создать Deployment и обеспечить старт основного контейнера при выполнении условий
 
@@ -49,11 +49,11 @@
 3. Создать и запустить Service. Убедиться, что nginx запустился
 4. Продемонстрировать состояние пода до и после запуска сервиса
    
-   ![Before]:(https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-run-app/init-1.png) <br />
+   ![Before](./init-1.png) <br />
 
-   ![After]:(./init-2.png) <br />
+   ![After](./init-2.png) <br />
 
-
+------
 
 ### Правила приема работы
 
