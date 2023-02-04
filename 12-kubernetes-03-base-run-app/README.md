@@ -32,9 +32,9 @@
 
    [Конфиг Pod2]:https://github.com/flibook/devops-netology/blob/main/12-kubernetes-03-base-run-app/multitool.yaml <br />
    
-   [До](./before.png) <br />
+   ![До](./before.png) <br />
 
-   [После](./after.png) <br />
+   ![После](./after.png) <br />
    
 4. Создать Service, который обеспечит доступ до реплик приложений из п.1
 5. Создать отдельный Pod с приложением multitool и убедиться с помощью `curl` что из пода есть доступ до приложений из п.1
