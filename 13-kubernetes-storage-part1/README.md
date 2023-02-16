@@ -17,6 +17,7 @@
 ### Решение
 
 [Конфиг Pod1]:https://github.com/flibook/devops-netology/blob/main/13-kubernetes-storage-part1/deployment.yaml <br />
+
 ![Скрин](./screen.png) <br />
 
 ------
@@ -31,7 +32,9 @@
 ### Решение
 
 [Конфиг Pod1]:https://github.com/flibook/devops-netology/blob/main/13-kubernetes-storage-part1/daemonset.yaml <br />
+
 ![Скрин](./pod.png) <br />
+
 ![Скрин](./syslog.png) <br />
 
 ------
