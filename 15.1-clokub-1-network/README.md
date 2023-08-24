@@ -1,4 +1,4 @@
-# Домашнее задание к занятию «Организация сети» dev-17_kuber-homeworks-clopro-15.1-yakovlev_vs
+# Домашнее задание к занятию «Организация сети»
 «Организация сети»
 
 
@@ -33,7 +33,7 @@ Resource Terraform для Yandex Cloud:
 
 #### Решение
 
-- [Terraform](https://github.com/Valdem88/dev-17_kuber-homeworks-clopro-15.1-yakovlev_vs/tree/main/terraform) 
+- [Terraform](https://github.com/flibook/devops-netology/tree/main/15.1-clokub-1-network/terraform) 
 
 
 ```bash
